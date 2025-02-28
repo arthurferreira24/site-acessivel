@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
-    --vermelho-f1: #C8102E; /* Cor vermelha da Fórmula 1 */
-    --preto-f1: #000000; /* Cor preta da Fórmula 1 */
-    --branco-f1: #FFFFFF; /* Cor branca da Fórmula 1 */
+    --vermelho-f1: #C8102E; /* Vermelho da Fórmula 1 */
+    --preto-f1: #000000; /* Preto da Fórmula 1 */
+    --branco-f1: #FFFFFF; /* Branco da Fórmula 1 */
+    --cinza-f1: #7D7D7D; /* Cinza neutro */
+    --laranja-claro: #FF862A; /* Laranja claro */
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+    --alto-contraste-link: #ffd700; /* Dourado */
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 }
 
 header {
-    background-color: var(--branco-f1);
+    background-color: var(--preto-f1);
 }
 
 section {
@@ -26,7 +27,7 @@ section {
 }
 
 .nav-link {
-    color: #CB6D43;
+    color: var(--vermelho-f1);
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -62,7 +63,7 @@ section {
 }
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--vermelho-f1);
     border-radius: 30px;
     border: none;
     width: 14em;
@@ -71,7 +72,7 @@ section {
 }
 
 .botao-inicio:hover {
-    background-color: var(--vermelho-f1);
+    background-color: var(--laranja-claro);
 }
 
 .display-4 {
@@ -100,7 +101,7 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--vermelho-f1);
 }
 
 #galeria {
@@ -119,7 +120,7 @@ h2 {
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: var(--branco-f1);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -127,14 +128,14 @@ h2 {
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: var(--vermelho-f1);
     border: none;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .formulario button:hover {
-    background-color: var(--vermelho-f1);
+    background-color: var(--laranja-claro);
 }
 
 .form-control {
@@ -218,4 +219,29 @@ h2 {
     .botao-inicio {
         width: 100%;
     }
+}.menu-capacete {
+    display: flex;
+    align-items: center;
+}
+
+.capacete-senna {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-left: 20px; /* Espaçamento à esquerda */
+}.tema-corrida {
+    background-color: #000; /* Fundo preto para o tema de corrida */
+    color: #fff; /* Texto branco */
+}
+
+.tema-corrida .nav-link {
+    color: #FFD700; /* Dourado para links */
+}
+
+.tema-corrida .botao-inicio {
+    background-color: #C8102E; /* Vermelho da Fórmula 1 */
+}
+
+.tema-corrida .formulario {
+    background-color: #333; /* Fundo escuro para o formulário */
+    color: #fff; /* Texto branco no formulário */
 }
