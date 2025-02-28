@@ -219,7 +219,9 @@ h2 {
     .botao-inicio {
         width: 100%;
     }
-}.menu-capacete {
+}
+
+.menu-capacete {
     display: flex;
     align-items: center;
 }
@@ -228,7 +230,9 @@ h2 {
     width: 50px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     margin-left: 20px; /* Espaçamento à esquerda */
-}.tema-corrida {
+}
+
+.tema-corrida {
     background-color: #000; /* Fundo preto para o tema de corrida */
     color: #fff; /* Texto branco */
 }
